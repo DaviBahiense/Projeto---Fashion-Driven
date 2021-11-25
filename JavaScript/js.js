@@ -1,0 +1,1 @@
+const name = prompt("Qual o seu nome?")
