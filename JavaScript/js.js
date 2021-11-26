@@ -2,32 +2,45 @@
 
 let arraySelected = []
 
-function selectModel(clic){
+function selectModel(element, type){
     const model = document.querySelector(".model .selected")
     if(model){
         model.classList.remove("selected")
         arraySelected.pop(1)
     }
-    clic.classList.add("selected")
+    element.classList.add("selected")
     arraySelected.push(1)
+
+    const elementSelect =  document.querySelector(".model .selected").parentElement
+    const elementSpan = elementSelect.lastElementChild.firstChild.data
+    console.log(elementSpan)
+
     verify()}
-function selectCollar(clic){
+function selectCollar(element){
     const model = document.querySelector(".collar .selected")
     if(model){
         model.classList.remove("selected")
         arraySelected.pop(1)
     }
-    clic.classList.add("selected")
+    element.classList.add("selected")
     arraySelected.push(1)
+
+    const elementSelect =  document.querySelector(".collar .selected").parentElement
+    const elementSpan = elementSelect.lastElementChild.firstChild.data
+    console.log(elementSpan)
     verify()}
-function selectTissue(clic){
+function selectTissue(element){
     const model = document.querySelector(".tissue .selected")
     if(model){
         model.classList.remove("selected")
         arraySelected.pop(1)
     }
-    clic.classList.add("selected")
+    element.classList.add("selected")
     arraySelected.push(1)
+
+        const elementSelect =  document.querySelector(".tissue .selected").parentElement
+    const elementSpan = elementSelect.lastElementChild.firstChild.data
+    console.log(elementSpan)
     verify()
 }
 
@@ -44,7 +57,23 @@ if(arraySelected.length === 3 && isWrite !== ""){
     button.style.pointerEvents = 'auto'
 }
 }
-function confirm(){
-    alert("Sua encomenda foi efetuada com sucesso")
+function confirmOrder(){
+    alert("Seu pedido foi feito")
+}
+
+function sendingOrder(){
+    const promisse = axios.get("https://mock-api.driven.com.br/api/v4/shirts-api/shirts")
+    promisse.then(showOrders)
+    console.log(promisse)
+}
+sendingOrder()
+function showOrders(info){
+    const infoOrder = info.data
+
+    for (let i = 0; i < infoOrder.length; i++) {
+        const element = infoOrder[i];
+
+        
+    }
 }
 

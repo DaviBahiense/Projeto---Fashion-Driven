@@ -27,7 +27,7 @@
                     <div class="circle" onclick="selectModel(this)">
                         <img src="./source/tshirt.png" alt="">
                     </div>
-                    <span>T-shirt</span>
+                    <span class="descrition">T-shirt</span>
                 </div>
                 <div class="no-sleeve">
                     <div class="circle" onclick="selectModel(this)">
@@ -87,7 +87,7 @@
             </div>
             <span>Imagem de referência</span>
             <input type="url" placeholder="  Insira o link" oninput="verify()">
-            <button onclick = confirm()>Confirmar pedido</button>
+            <button onclick = confirmOrder()>Confirmar pedido</button>
         </div>
         <div class="doll">
             <img src="./source/ilustração.png" alt="">
@@ -104,5 +104,6 @@
         </div>
     </section>
     <script src="./JavaScript/js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
 </body>
 </html>
