@@ -24,19 +24,19 @@
             <span>Escolha o modelo</span>
             <div class="model">
                 <div class="t-shirt">
-                    <div class="circle">
+                    <div class="circle" onclick="selectModel(this)">
                         <img src="./source/tshirt.png" alt="">
                     </div>
                     <span>T-shirt</span>
                 </div>
                 <div class="no-sleeve">
-                    <div class="circle">
+                    <div class="circle" onclick="selectModel(this)">
                         <img src="./source/Camiseta.png" alt="">
                     </div>
                     <span>Camiseta</span>
                 </div>
                 <div class="long-sleeve">
-                    <div class="circle">
+                    <div class="circle" onclick="selectModel(this)">
                         <img src="./source/Mangalonga.png" alt="">
                     </div>
                     <span>Manga longa</span>
@@ -45,19 +45,19 @@
             <span>Escolha a gola </span>
             <div class="collar">
                 <div class="v-collar">
-                    <div class="circle">
+                    <div class="circle" onclick="selectCollar(this)">
                         <img src="./source/GolaV.png" alt="">
                     </div>
                     <span>Gola V</span>
                 </div>
                 <div class="roll">
-                    <div class="circle">
+                    <div class="circle" onclick="selectCollar(this)">
                         <img src="./source/GolaRedonda.png" alt="">
                     </div>
                     <span>Gola Redonda</span>
                 </div>
                 <div class="pole">
-                    <div class="circle">
+                    <div class="circle" onclick="selectCollar(this)">
                         <img src="./source/GolaPolo.png" alt="">
                     </div>
                     <span>Gola polo</span>
@@ -66,27 +66,28 @@
             <span>Escolha o tecido</span>
             <div class="tissue">
                 <div class="silk">
-                    <div class="circle">
+                    <div class="circle" onclick="selectTissue(this)">
                         <img src="./source/Seda.png" alt="">
                     </div>
                     <span>Seda</span>
                 </div>
                 <div class="cotton">
-                    <div class="circle">
+                    <div class="circle" onclick="selectTissue(this)">
                         <img src="./source/Algodão.png" alt="">
                     </div>
                     <span>Algodão</span>
                 </div>
                 <div class="polyester">
-                    <div class="circle">
+                    <div class="circle" onclick="selectTissue(this)">
                         <img src="./source/Poliester.png" alt="">
                     </div>
                     <span>Poliéster</span>
                 </div>
 
             </div>
-            <input type="url" placeholder="  Insira o link">
-            <button>Confirmar pedido</button>
+            <span>Imagem de referência</span>
+            <input type="url" placeholder="  Insira o link" oninput="verify()">
+            <button onclick = confirm()>Confirmar pedido</button>
         </div>
         <div class="doll">
             <img src="./source/ilustração.png" alt="">

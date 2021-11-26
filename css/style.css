@@ -223,6 +223,13 @@ button{
     text-align: center;
 
 }
+.selected{
+    border: 3px solid #404EED
+}
+.disable{
+    background-color: #404EED;
+    
+}
 
 
 
