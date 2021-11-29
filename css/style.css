@@ -15,14 +15,12 @@ body{
     align-items: center;
 }
 .logo{
-
     padding-left: 80px;
-
 }
 
 .mid{
     display: flex;
-    position: relative;
+    justify-content: space-between;
 }
 .doll{
     Width: 48%;
@@ -41,13 +39,15 @@ body{
     bottom: 0.65%;
 }
 .chosen{
-    width: 52%;
+    width: 692px;
     height: 785px;
 
-    padding: 38px 187px 39px 125px;
+    padding: 38px 125px 39px 125px;
+    margin-left: 5%;
+   
     display: flex;
     flex-direction: column;
-
+    
     background-color: white;
 }
 .chosen span{
@@ -183,6 +183,11 @@ button{
 
     background-color: #F2F2F2;;
 }
+.demand{
+    overflow: scroll;
+    display: flex;
+
+}
 .box-demand{
     Width: 201px;
     Height: 236px;
@@ -200,6 +205,9 @@ button{
 .box-demand img{
     height: 180px;
     width: 180px;
+
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .last-demand{
     font-family: Roboto;
